@@ -38,21 +38,21 @@
 ### 1. 下载脚本
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/lansepeach/WebDAV-Backup.git
 cd your-repo-name
 # 或者直接下载脚本文件
-# wget https://raw.githubusercontent.com/your-username/your-repo-name/main/webdav-backup-manager.sh
+# wget https://raw.githubusercontent.com/lansepeach/WebDAV-Backup/refs/heads/main/webdav-backup.sh
 ```
 
 ### 2. 添加执行权限
 
 ```bash
-chmod +x webdav-backup-manager.sh
+chmod +x webdav-backup.sh
 ```
 
 ### 3. 配置脚本
 
-直接编辑 `webdav-backup-manager.sh` 文件顶部的 **`--- Configuration Section ---`** 区域：
+直接编辑 `webdav-backup.sh` 文件顶部的 **`--- Configuration Section ---`** 区域：
 
 | 变量名 | 说明 | 示例 |
 | :--- | :--- | :--- |
@@ -82,13 +82,13 @@ export WEBDAV_PASS="你的WebDAV密码"
 **手动执行:**
 ```bash
 # 确保已设置环境变量
-./webdav-backup-manager.sh
+./webdav-backup.sh
 ```
 
 **通过 Cron 或 MCSManager 自动化执行:**
 在 MCSManager 的计划任务中，执行命令应设置为：
 ```bash
-/bin/bash /path/to/your/webdav-backup-manager.sh
+/bin/bash /path/to/your/webdav-backup.sh
 ```
 **重要:** Cron 或 MCSManager 等自动化工具默认可能不会加载用户的 `.bashrc` 文件。为确保脚本能读取到环境变量，最佳实践是创建一个启动脚本，或者在任务命令中直接定义它们：
 ```bash
