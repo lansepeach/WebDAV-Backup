@@ -21,7 +21,7 @@ set -o pipefail # Exit on pipe failures
 # Please configure these variables according to your needs.
 
 # 1. Directory to be backed up.
-readonly SOURCE_DIR="/opt/mcsmanager/daemon/data/InstanceData/fcbc555412684dd6b2d80e4e61f22914"
+readonly SOURCE_DIR="/opt/mcsmanager/daemon/data"
 
 # 2. Temporary directory for storing segmented files.
 readonly TEMP_DIR="/opt/tmp/webdav_backup_temp"
