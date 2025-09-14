@@ -30,7 +30,7 @@ readonly TEMP_DIR="/opt/tmp/webdav_backup_temp"
 readonly SEGMENT_SIZE="950M"
 
 # 4. Full URL of the target WebDAV directory. Must end with a '/'.
-readonly WEBDAV_URL="https://webdav.123pan.cn/webdav/nb7/"
+readonly WEBDAV_URL="https://webdav.123pan.cn/webdav/"
 
 # 5. Number of recent backup sets to keep.
 readonly RETENTION_COUNT=7
